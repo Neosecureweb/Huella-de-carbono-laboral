@@ -25,7 +25,7 @@ async function guardarEnFirebase() {
   const cargo = document.getElementById("cargo").value;
   const correo = document.getElementById("correo").value;
   if (!nombre || !cargo) {
-    alert("⚠️ Nombre y cargo son obligatorios");
+    alert("⚠️ Nombre, cargo y correo son obligatorios");
     return;
   }
 
@@ -34,6 +34,7 @@ async function guardarEnFirebase() {
     // Información básica
     nombre: nombre,
     cargo: cargo,
+    correo:correo,
     fechaRegistro: new Date().toISOString(),
     
     // Dispositivos electrónicos
