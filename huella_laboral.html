@@ -457,9 +457,10 @@ function CalcularHuellaLaboral() {
 function generarInforme() {
     const nombre = document.getElementById("nombre").value;
     const cargo = document.getElementById("cargo").value;
+    const correo = document.getElementById("correo").value;
 
-    if (!nombre || !cargo) {
-        alert("Por favor completa tu nombre y cargo.");
+    if (!nombre || !cargo || !correo) {
+        alert("Por favor completa tu nombre, cargo y correo.");
         return;
     }
 
